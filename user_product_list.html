@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		 <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">                                                                                                                                                                                                   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>用户产品列表</title>
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/xty_style.css" />
+		<link rel="stylesheet" href="css/user.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+<link rel="stylesheet" href="css/mine.css" />
+		<link rel="stylesheet" href="css/mine.css" />
+		<link rel="stylesheet" href="css/bootstrap.offcanvas.min.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.offcanvas.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/myscript.js" ></script>
+	</head>
+	<body>
+		
+		<!--头部开始-->
+		<div class="headpage navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<ul class="headpage_ul">
+                      <li><a href="shop_cart.html">购物车</a></li>
+                      <li><a href="register.html">注册</a></li>
+                      <li><a href="login.html">登录</a></li>
+                      <li><a href="league.html">加盟申请</a></li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--头部结束-->
+		
+		<!--导航开始-->
+		<nav class="navbar navbar-default navbar-fixed-top nav_box_all">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <img class="img-responsive logo" src="img/logo.jpg"/>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav  nav_box">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="product_supermarket.html">产品超市</a></li>
+        <li><a href="user.html">用户中心</a></li>
+        <li><a href="#">用户案例</a></li>
+        <li><a href="#">体验中心</a></li>
+      </ul>
+    </div>
+  </div> 
+</nav>
+<!--导航结束-->
+
+<div class="user_all">
+	<div class="container">
+		<!--副导航开始-->
+     <div class="user_left">
+     	<button type="button" class="navbar-toggle offcanvas-toggle user_btn" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+     	<nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade bg_color" role="navigation" id="js-bootstrap-offcanvas">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+                        <span class="sr-only"></span>
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </button>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav user_ul">
+                        <li><a href="user.html">用户中心</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >我的产品<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="user_product_list.html">我的产品</a></li>    
+                            </ul>
+                        </li>
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">账户管理<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="user_jbxx.html">会员基本信息</a></li>  
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">资金管理<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="user_card.html">银行卡信息</a></li>
+                                <li><a href="user_chongzhi.html">充值</a></li>  
+                                <li><a href="user_tixian.html">提现</a></li>  
+                               <li><a href="user_card_mx.html">交易明细</a></li>         
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的推荐<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="user_my_tj.html">我的推荐码</a></li>   
+                                <li><a href="#">我的推荐会员</a></li> 
+                            </ul>
+                        </li>
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">加盟管理<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="user_jiameng_qiye.html">企业认证</a></li>   
+                                <li><a href="user_jiameng.html">合作加盟管理</a></li> 
+                            </ul>
+                        </li>
+                    </ul>
+   
+                </div>
+            </div>
+        </nav>
+     </div>
+     <!--副导航结束-->
+     
+     <!--用户产品列表-->
+     <div class="user_right">
+     	<div class="product_div">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#oa" aria-controls="home" role="tab" data-toggle="tab">OA</a></li>
+    <li role="presentation"><a href="#crm" aria-controls="profile" role="tab" data-toggle="tab">CRM</a></li>
+    <li role="presentation"><a href="#zccp" aria-controls="messages" role="tab" data-toggle="tab">众筹产品</a></li>
+    <li role="presentation"><a href="#p2p" aria-controls="settings" role="tab" data-toggle="tab">P2P网贷</a></li>
+  </ul>
+  <table class="product_title">
+  	<tr>
+  	<td>产品名称</td>
+  	<td>版本</td>
+  	<td class="min_td">价格（元）</td>
+  	<td class="min_td">支付方式</td>
+  	<td class="min_td">购买时间</td>
+  	<td class="min_td">使用期限</td>
+  	<td>状态</td>
+  	<td>操作</td>
+  	</tr>
+  </table>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="oa">
+    	<table class="table_all">
+    		<tr>
+    			<td>OA一号版本</td>
+    			<td>OA5456454</td>
+    			<td>200000元</td>
+    			<td class="min_td">线下支付</td>
+    			<td class="min_td">2012-2-2</td>
+    			<td class="min_td">100年</td>
+    			<td class="min_td">未支付</td>
+    			<td><a href="">删除</a></td>
+    		</tr>
+    		<tr>
+    			<td>OA一号版本</td>
+    			<td>OA5456454</td>
+    			<td>200000元</td>
+    			<td class="min_td">在线支付</td>
+    			<td class="min_td">2012-2-2</td>
+    			<td class="min_td">100年</td>
+    			<td class="min_td">未支付</td>
+    			<td><a href="confirm_order.html">支付</a><br><br><a href="">删除</a></td>
+    		</tr>
+    		<tr>
+    			<td>OA一号版本</td>
+    			<td>OA5456454</td>
+    			<td>200000元</td>
+    			<td class="min_td">在线支付</td>
+    			<td class="min_td">2012-2-2</td>
+    			<td class="min_td">100年</td>
+    			<td class="min_td">已支付</td>
+    			<td><a href="product_detail.html">查看</a></td>
+    		</tr>
+    	</table>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="crm">
+    		<table class="table_all">
+    		<tr>
+    			<td>OA一号版本</td>
+    			<td>OA5456454</td>
+    			<td>200000元</td>
+    			<td class="min_td">在线支付</td>
+    			<td class="min_td">2012-2-2</td>
+    			<td class="min_td">100年</td>
+    			<td class="min_td">未开通</td>
+    			<td>删除</td>
+    		</tr>
+    		<tr>
+    			<td>阿斯顿一号版本</td>
+    			<td>OA5456454</td>
+    			<td>200000元</td>
+    			<td class="min_td">在线支付</td>
+    			<td class="min_td">2012-2-2</td>
+    			<td class="min_td">100年</td>
+    			<td class="min_td">未开通</td>
+    			<td>删除</td>
+    		</tr>
+    	</table>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="zccp">
+    		<table class="table_all">
+    		<tr>
+    			<td>一号版本</td>
+    			<td>OA5456454</td>
+    			<td>200000元</td>
+    			<td class="min_td">在线支付</td>
+    			<td class="min_td">2012-2-2</td>
+    			<td class="min_td">100年</td>
+    			<td class="min_td">未开通</td>
+    			<td>删除</td>
+    		</tr>
+    		<tr>
+    			<td>OA一号版本</td>
+    			<td>OA5456454</td>
+    			<td>200000元</td>
+    			<td class="min_td">在线支付</td>
+    			<td class="min_td">2012-2-2</td>
+    			<td class="min_td">100年</td>
+    			<td class="min_td">未开通</td>
+    			<td>删除</td>
+    		</tr>
+    	</table>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="p2p">
+    		<table class="table_all">
+    		<tr>
+    			<td>p2p一号版本</td>
+    			<td>OA5456454</td>
+    			<td>200000元</td>
+    			<td class="min_td">在线支付</td>
+    			<td class="min_td">2012-2-2</td>
+    			<td class="min_td">100年</td>
+    			<td class="min_td">未开通</td>
+    			<td>删除</td>
+    		</tr>
+    		<tr>
+    			<td>OA一号版本</td>
+    			<td>OA5456454</td>
+    			<td>200000元</td>
+    			<td class="min_td">在线支付</td>
+    			<td class="min_td">2012-2-2</td>
+    			<td class="min_td">100年</td>
+    			<td class="min_td">未开通</td>
+    			<td>删除</td>
+    		</tr>
+    	</table>
+    </div>
+  </div>
+
+
+	<section class="page_element">
+						<ul class="pagination">
+							<li class="disabled prev"><span>上一页</span></li>
+							<li class="active"><span>1</span></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">6</a></li>
+							<li><a href="">7</a></li>
+							<li class="next"><a href="">下一页</a></li>
+							<li><span>共 7 页</span></li>
+						</ul>
+					</section>
+
+	
+</div>
+     </div>
+      <!--用户产品列表-->
+	</div>
+</div>
+
+
+<!--footer-->
+<div class="foot_box1">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<img class="img-responsive" src="img/foot_word.jpg">
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="box4_right">
+			<ul class="box4_ul left">
+				<li>
+					<label>公司名称：</label>杭州高达云计算有限公司
+				</li>
+				<li>
+					<label>地址：</label>杭州万塘路30号高新东方科技园12幢3楼
+				</li>
+				<li>
+					<label>邮编：</label>310013
+				</li>
+				<li>
+					<label>电话：</label>400-6481668
+				</li>
+			</ul>
+			<span class="right box4_span">
+					<img class="img-responsive" src="img/weima.jpg">
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="foot_box2">
+				<div class="foot_div">
+				<div class="container">
+				<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<ul class="foot_ul">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="product_supermarket.html">产品超市</a></li>
+					<li><a href="user.html">用户中心</a></li>
+					<li><a href="">用户案例</a></li>
+					<li><a href="">体验中心</a></li>
+				</ul>
+				</div>
+				</div>
+				</div>
+				</div>
+				<div class="container">
+				<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<p class="foot_p">COPYRIGHT © 2014 杭州高达云计算有限公司   沪ICP备13035135号 </p>
+				<p class="foot_p">Powered by eero.cn</p>
+				</div>
+				</div>
+				</div>
+	</div>
+</div>
+
+<!--footer-->
+	</body>
+</html>
